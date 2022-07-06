@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap');
+        </style>
 </head>
 <body>
-<h1 id="title"> </h1>
-<p id="decription"> </p>
-<form id="survey-form">
-<input id="name" type="text" placeholder="Enter your Name">
-<label id="name-label">Name</label>
-<input id="email" type="text" placeholder="Enter your e-mail">
-<label id="email-label">E-mail</label>
-<input id="number" type="number" placeholder="Enter your number">
-<label id="number-label">Number</label>
-<div>
-<label>Choose a color:</label>
-<select id="dropdown" name="colors">
-<option value="blue">Blue</option>
-<option value="red">Red</option>
-</select>
-</div>
-<div>
-<label>What are you interested in?</label>
-<input id="dropdpwn" type="checkbox" value="news" name="interest"/> 
-<label for="interest-news">News</label>
-<input id="dropdown" type="checkbox" value="sport" name="interest"/>
-<label for="interest-news">Sport</label>
-</div>
-<div>
-<label>How do you learn?</label>
-<input id="how-video" name="how" value="video" type="radio" />
-<label for="how-video">Video Courses</label>
-<input id="how-blogs" name="how" value="blogs" type="radio"/>
- <label for="how-blogs">Blogs</label>
-</div>
-<div>
-<label>Tell something about yourself:</label>
-<textarea id="text" rows="3">
-  Please ....
-  </textarea>
-  </div>
-  <button type="submit">Send</button>
-</form>
+    <div class="container">
+        <div class="text">
+            <h1 id="title"> My form</h1>
+            <p id="description"> Thank you for taking the time to help us improve the platform</p>
+        </div>
+            <form id="survey-form">
+                    <div class="inputs">
+                        <label id="name-label">Name</label>
+                        <input id="name" type="text" placeholder="Enter your Name">
+                        <label id="email-label">E-mail</label>
+                        <input id="email" type="text" placeholder="Enter your e-mail">
+                        <label id="number-label">Number</label> 
+                        <input id="number" type="number" placeholder="Enter your number">
+                       
+                    </div>
+                    <div class="dropdown">
+                        <label id="choose">Choose a color:</label>
+                        <select id="dropdown" name="colors">
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        </select>
+                    </div>
+                    <div class="how">
+                        <label id="how">How do you learn?</label>
+                        <input id="how-video" name="how" value="video" type="radio" />
+                        <label for="how-video">Video Courses</label>
+                        <input id="how-blogs" name="how" value="blogs" type="radio"/>
+                        <label for="how-blogs">Blogs</label>
+                    </div>
+                    <div class="check">
+                        <label id="check">What are you interested in?</label>
+                        <input id="dropdpwn" type="checkbox" value="news" name="interest"/> 
+                        <label for="interest-news">News</label>
+                        <input id="dropdown" type="checkbox" value="sport" name="interest"/>
+                        <label for="interest-news">Sport</label>                
+                    </div>
+                    <div class="textarea">
+                        <label id="area">Tell something about yourself:</label>
+                        <textarea id="text" rows="5">Enter your comment here
+                        </textarea>
+                    </div>
+                    <div class="btn">
+                        <button id="submit" type="submit">Submit</button>  
+                    </div>
+            </form>
+    </div>
+
 
 <script src="script.js"></script>
 </body>
