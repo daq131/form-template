@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="title"> </h1>
+<p id="decription"> </p>
+<form id="survey-form">
+<input id="name" type="text" placeholder="Enter your Name">
+<label id="name-label">Name</label>
+<input id="email" type="text" placeholder="Enter your e-mail">
+<label id="email-label">E-mail</label>
+<input id="number" type="number" placeholder="Enter your number">
+<label id="number-label">Number</label>
+<div>
+<label>Choose a color:</label>
+<select id="dropdown" name="colors">
+<option value="blue">Blue</option>
+<option value="red">Red</option>
+</select>
+</div>
+<div>
+<label>What are you interested in?</label>
+<input id="dropdpwn" type="checkbox" value="news" name="interest"/> 
+<label for="interest-news">News</label>
+<input id="dropdown" type="checkbox" value="sport" name="interest"/>
+<label for="interest-news">Sport</label>
+</div>
+<div>
+<label>How do you learn?</label>
+<input id="how-video" name="how" value="video" type="radio" />
+<label for="how-video">Video Courses</label>
+<input id="how-blogs" name="how" value="blogs" type="radio"/>
+ <label for="how-blogs">Blogs</label>
+</div>
+<div>
+<label>Tell something about yourself:</label>
+<textarea id="text" rows="3">
+  Please ....
+  </textarea>
+  </div>
+  <button type="submit">Send</button>
+</form>
+
+<script src="script.js"></script>
+</body>
