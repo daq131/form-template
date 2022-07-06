@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    
     <link rel="stylesheet" href="style.css">
     <title>Survey form</title>
     <style>
@@ -15,11 +16,12 @@
             <form id="survey-form">
                     <div class="inputs">
                         <label id="name-label">Name</label>
-                        <input id="name" type="text" placeholder="Enter your Name">
+                        <input id="name" type="text" placeholder="Enter your Name" data-error="Name is required" required>
                         <label id="email-label">E-mail</label>
-                        <input id="email" type="text" placeholder="Enter your e-mail">
-                        <label id="number-label">Number</label> 
-                        <input id="number" type="number" placeholder="Enter your number">
+                        <input id="email" type="email" required placeholder="Enter your e-mail">
+                        <label id="number-label">Enter Your Age
+                        </label> 
+                        <input id="number" min="1" max="120" type="number" required placeholder="Enter your number">
                        
                     </div>
                     <div class="dropdown">
@@ -31,22 +33,31 @@
                     </div>
                     <div class="how">
                         <label id="how">How do you learn?</label>
-                        <input id="how-video" name="how" value="video" type="radio" />
-                        <label for="how-video">Video Courses</label>
-                        <input id="how-blogs" name="how" value="blogs" type="radio"/>
-                        <label for="how-blogs">Blogs</label>
+                        <div class="how1">
+                            <input id="how-video" name="how" value="video" type="radio" />
+                            <label for="how-video">Video Courses</label>
+                        </div>
+                        <div class="how2">
+                            <input id="how-blogs" name="how" value="blogs" type="radio"/>
+                            <label for="how-blogs">Blogs</label>
+                        </div>
+                        
+                        
                     </div>
                     <div class="check">
                         <label id="check">What are you interested in?</label>
-                        <input id="dropdpwn" type="checkbox" value="news" name="interest"/> 
-                        <label for="interest-news">News</label>
-                        <input id="dropdown" type="checkbox" value="sport" name="interest"/>
-                        <label for="interest-news">Sport</label>                
+                        <div class="check1">
+                           <input id="dropdpwn" type="checkbox" value="news" name="interest"/> 
+                            <label for="interest-news">News</label>
+                        </div>
+                        <div class="check2">
+                            <input id="dropdpwn" type="checkbox" value="sport" name="interest"/> 
+                            <label for="interest-news">Sport</label>
+                        </div>          
                     </div>
                     <div class="textarea">
                         <label id="area">Tell something about yourself:</label>
-                        <textarea id="text" rows="5">Enter your comment here
-                        </textarea>
+                        <textarea id="text" rows="5">Enter your comment here</textarea>
                     </div>
                     <div class="btn">
                         <button id="submit" type="submit">Submit</button>  
